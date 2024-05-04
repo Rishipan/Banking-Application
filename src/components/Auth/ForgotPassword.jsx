@@ -1,30 +1,45 @@
-import React, { useState } from 'react';
+import React from "react";
+import { useState } from "react";
+import { FaEnvelope } from "react-icons/fa";
+import { auth } from "../../firebase";
+import { toast } from "react-toastify";
 
 const ForgotPassword = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleForgotPassword = async (e) => {
     e.preventDefault();
-    // Add logic to handle the form submission, such as sending a reset password link to the provided email
-    console.log(`Reset password link sent to ${email}`);
-    // Reset the email input field after submission
-    setEmail('');
+    try {
+      await auth.sendPasswordResetEmail(email);
+      toast.success("Password reset email sent. Please check your inbox.");
+    } catch (error) {
+      toast.error("Error sending password reset email. Please try again.");
+      console.error(error);
+    }
   };
 
   return (
     <div>
-      <h1>Forgot Password</h1>
-      <p>Enter your email to reset your password.</p>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <button type="submit">Submit</button>
-      </form>
+      <div className="wrapper">
+        <form onSubmit={handleForgotPassword}>
+          <h1>Forgot Password</h1>
+
+          <div className="input-box">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <FaEnvelope className="icon" />
+          </div>
+
+          <div>
+            <button type="submit">Send Password Reset Email</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

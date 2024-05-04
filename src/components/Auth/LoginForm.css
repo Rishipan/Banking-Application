@@ -1,105 +1,102 @@
-.wrapper{
-    width: auto;
-    background: transparent;
-    border: 2px solid rgba(255,255,255,.2);
-    color: #fff;
-    backdrop-filter: blur(30px);
-    box-shadow: 0 0 10px rgba(255,255,255,.2);
-    border-radius: 10px;
-    padding: 50px;
-    display: flex;
-    right: 0;
-    top: 50%;
+.wrapper {
+  width: auto;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  right: 0;
+  top: 50%;
 }
 
-.wrapper h1{
-    font-size: 36px;
-    text-align: center;
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
 }
 
-.wrapper .input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 20px 0;
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
 }
 
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    outline: none;
-    border: 2px solid rgba(255,255,255,.2);
-    border-radius: 40px;
-    font-size: 16;
-    color: #fff;
-    padding: 20px;
-    padding-right: 45px;
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16;
+  color: #fff;
+  padding: 20px;
+  padding-right: 45px;
 }
 
 .input-box input::placeholder {
-    color: #fff;
+  color: #fff;
 }
 
 .input-box .icon {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
 }
 
-.wrapper .forgot-password{
-    font-size: 10px;
-    text-align: right;
-    margin-bottom: 15px;
-    
+.wrapper .forgot-password {
+  font-size: 10px;
+  text-align: right;
+  margin-bottom: 15px;
 }
 
 .forgot-password a {
-    color: #fff;
-    text-decoration: none;
-
+  color: #fff;
+  text-decoration: none;
 }
 
 .forgot-password a:hover {
-    text-decoration: underline;
-    color: rgb(138, 210, 138);
+  text-decoration: underline;
+  color: rgb(138, 210, 138);
 }
 
-.wrapper button{
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 700;
-    align-items: center;
+.wrapper button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  align-items: center;
 }
 
-.wrapper button:hover{
-    background-color: rgb(241, 131, 179);
+.wrapper button:hover {
+  background-color: rgb(241, 131, 179);
 }
 
-.wrapper .register-link{
-    font-size: 14.55px;
-    text-align: center;
-    margin-top: 15px;
-    
+.wrapper .register-link {
+  font-size: 14.55px;
+  text-align: center;
+  margin-top: 15px;
 }
 
-.register-link p a{
-    color: #90a7f0;
-    text-decoration: none;
-    font-weight: 600;
+.register-link p a {
+  color: #90a7f0;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.register-link p a:hover{
-    text-decoration: underline;
-    color: rgb(138, 210, 138);
+.register-link p a:hover {
+  text-decoration: underline;
+  color: rgb(138, 210, 138);
 }
