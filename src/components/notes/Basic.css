@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .note {
+    width: 300px; /* Adjust as needed */
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    /* border-radius: 10px;
+    margin-right: 20px;  */
+  }
+  
+  .note p {
+    margin: 0;
+  }
+  
